@@ -1,0 +1,13 @@
+Mocanu Alexandru George 325 CB
+	Rezolvare Tema1
+
+Pentru rezolvarea temei am folosit o functie prezenta la eticheta "convert",in implementarea functiei folosind alte 6 etichete pentru diferite task-uri ( etape de funcitonare ale functiei).
+
+	In primul rand functia are nevoie de doi parametri, numarul ce urmeaza sa fie convertit si baza in care urmeaza a fi convertit. 
+	Astfel mai intai verificam daca baza de conversie este corecta (sa nu fie mai mare de 16 si mai mica de 2), in cazul in care nu se incadreaza functia va afisa mesajul "Baza incorecta" si isi va incheia executia. 
+ 	Eticheta flag este corespunzatoare impartirii repetate a numarului la baza in care urmeaza a fi convertit, salvand mereu restul impartirii si apoi stocand-ul pe stiva, pentru o printare mult mai facila. 
+	Dupa ce am efectuat toate impartirile posibile asupra numarului incepem printarea acestuia in functie de baza de conversie(eticheta "print" verifica daca codificarea de pe nivelul curent al stivei este o cifra sau o litera).
+	Daca codificarea curenta este mai mare decat 9 atunci ea va fi reprezentata prin intermediul unei cifrei astfel vom ajunge la eticheta "print_char" ,altfel vom printa tot ca char numarul respectiv, acest lucru fiind implementat la eticheta "print_number".
+	In momentul impartirii am contorizat numarul de cifre al noului numar prin intermediul numarului de elemente urcate pe stiva.Astfel la printare vom verifca mereu daca mai avem elemente de scos din stiva iar daca nu vom ajunge la eticheta de final.
+	In interiorul Main-ului am urcat pe rand ,cei doi parametri pe stiva printr-un jump atat timp cat mai avem numere in array-urile primite ca input, apoi se apeleaza functia de conversie se scot din stiva vechile elemente pentru a lasa loc celor ce urmeaza, de asemenea se pastreaza pe stiva numarul iteratiilor prin vector.
+	
